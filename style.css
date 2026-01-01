@@ -1,0 +1,61 @@
+/* 整個頁面基本設定 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6f7f8;
+  color: #333;
+}
+
+/* 中央白色卡片 */
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 標題 */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* 介紹文字 */
+.intro {
+  font-size: 15px;       /* 字體大小 */
+  line-height: 1.8;      /* 行距，讓閱讀舒服 */
+}
+
+/* 控制段落之間的距離 */
+.intro p {
+  margin-bottom: 20px;
+}
+
+/* 按鈕區 */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 按鈕共用樣式 */
+.btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* 主按鈕 */
+.primary {
+  background-color: #4a90e2;
+  color: white;
+}
+
+/* 次按鈕 */
+.secondary {
+  border: 2px solid #4a90e2;
+  color: #4a90e2;
+}

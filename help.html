@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>我需要一點幫助</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- 頁首 -->
+    <div class="page-header">
+      <h1>我需要一點幫助</h1>
+      <p>
+        當你感到低潮、無力時，
+        也許可以試試別人走過這段時間的方法。
+      </p>
+    </div>
+
+    <!-- STEP 1：能量選擇 -->
+<div class="energy-select" id="energy-select">
+  <p>現在的你，大概有多少能量？</p>
+
+  <button onclick="chooseEnergy('low')">低能量</button>
+  <button onclick="chooseEnergy('mid')">中能量</button>
+  <button onclick="chooseEnergy('high')">高能量</button>
+</div>
+
+<!-- STEP 2：抽籤 -->
+<div class="shuffle" id="shuffle" style="display: none;">
+  <button onclick="draw()">抽一個給我</button>
+</div>
+
+<!-- STEP 3：結果 -->
+<div class="result" id="result" style="display: none;">
+  <p id="result-text"></p>
+
+  <button onclick="runAgain()">Run again</button>
+  <button onclick="backToGroup()">Back to group</button>
+</div>
+
+    <!-- 底部 -->
+    <div class="page-footer">
+      <a href="index.html">← 回到主頁</a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
