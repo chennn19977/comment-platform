@@ -7,8 +7,7 @@ let data = {
 let currentList = [];
 
 // ❶ 從 Google Sheet 抓資料
-fetch("
-https://api.sheetbest.com/sheets/d79d984d-c5de-4d59-bcbc-ae4922574b4c")
+fetch("https://api.sheetbest.com/sheets/d79d984d-c5de-4d59-bcbc-ae4922574b4c")
   .then(response => response.json())
   .then(rows => {
     rows.forEach(row => {
