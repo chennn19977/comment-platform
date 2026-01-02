@@ -1,31 +1,41 @@
 /* 整個頁面基本設定 */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f6f7f8;
-  color: #333;
+  font-family: "Noto Serif TC", "Times New Roman", serif;
+  background-color: #f2eee8; /* 米色背景 */
+  color: #3f3a34;
 }
 
 /* 中央白色卡片 */
 .container {
   max-width: 600px;
-  margin: 100px auto;
-  padding: 40px;
-  background: white;
-  border-radius: 12px;
+  margin: 80px auto;
+  padding: 48px 40px;
+  background: #faf7f2; /* 米白 */
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* 標題 */
 h1 {
-  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 30px;
 }
 
 /* 介紹文字 */
 .intro {
-  font-size: 15px;       /* 字體大小 */
-  line-height: 1.8;      /* 行距，讓閱讀舒服 */
+  font-size: 15px;
+  line-height: 1.9;
+  color: #4a453f;
 }
 
 /* 控制段落之間的距離 */
@@ -43,19 +53,26 @@ h1 {
 /* 按鈕共用樣式 */
 .btn {
   text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
 /* 主按鈕 */
 .primary {
-  background-color: #4a90e2;
-  color: white;
+  background-color: #bfae9e; /* 大地色 */
+  color: #fff;
 }
 
 /* 次按鈕 */
 .secondary {
-  border: 2px solid #4a90e2;
-  color: #4a90e2;
+  background-color: transparent;
+  border: 1.5px solid #bfae9e;
+  color: #6f6256;
 }
