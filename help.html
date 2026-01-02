@@ -15,18 +15,20 @@
 
       <h1>我需要一點幫助</h1>
       <p>
-        當你感到低潮、無力時，
-        也許可以試試別人走過這段時間的方法。
+        當你感到低潮、無力時，也許可以試試別人走過這段時間的方法。
       </p>
     </div>
 
     <!-- STEP 1：能量選擇 -->
-<div class="energy-select" id="energy-select">
-  <p>現在的你，大概有多少能量？</p>
 
-  <button onclick="chooseEnergy('low')">低能量</button>
-  <button onclick="chooseEnergy('mid')">中能量</button>
-  <button onclick="chooseEnergy('high')">高能量</button>
+<div class="energy-select" id="energy-select">
+  <p class="energy-question">現在的你，大概有多少能量？</p>
+
+  <div class="energy-buttons">
+    <button class="energy-btn" onclick="chooseEnergy('low')">低能量</button>
+    <button class="energy-btn" onclick="chooseEnergy('mid')">中能量</button>
+    <button class="energy-btn" onclick="chooseEnergy('high')">高能量</button>
+  </div>
 </div>
 
 <!-- STEP 2：抽籤 -->

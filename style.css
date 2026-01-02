@@ -76,3 +76,46 @@ h1 {
   border: 1.5px solid #bfae9e;
   color: #6f6256;
 }
+
+/* ===== 能量選擇區塊 ===== */
+
+.energy-select {
+  margin-top: 40px;
+  margin-bottom: 60px; /* 關鍵：跟回到首頁拉開 */
+}
+
+.energy-question {
+  font-size: 15px;
+  margin-bottom: 28px;
+  color: #4a453f;
+}
+
+/* 能量按鍵排列 */
+.energy-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* 能量按鍵本體 */
+.energy-btn {
+  width: 100%;
+  max-width: 320px;
+  padding: 18px 0;            /* 讓「按鍵本身」變大 */
+  border-radius: 36px;
+  border: none;
+  background-color: #e3dbd1;
+  color: #3f3a34;
+  font-size: 15px;            /* 字不用大 */
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* hover 效果 */
+.energy-btn:hover {
+  background-color: #d6cbbf;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
