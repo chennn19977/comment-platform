@@ -119,3 +119,90 @@ h1 {
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
+
+/* ===== 抽籤按鍵 ===== */
+
+.shuffle {
+  margin-top: 40px;
+}
+
+.draw-btn {
+  width: 220px;
+  height: 220px;              /* 關鍵：圓形 */
+  border-radius: 50%;
+  border: none;
+  background-color: #d6cbbf;
+  color: #3f3a34;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 1.6;
+  transition: all 0.25s ease;
+}
+
+.draw-btn:hover {
+  background-color: #cbbdac;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+/* ===== 結果頁深色操作按鍵 ===== */
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px; /* 跟「回到首頁」拉開 */
+  flex-wrap: wrap;
+}
+
+.result-primary {
+  padding: 16px 0;
+  width: 100%;
+  max-width: 260px;
+
+  background-color: #e3dbd1;   /* 跟能量鍵一樣 */
+  color: #3f3a34;
+
+  border: none;
+  border-radius: 36px;
+
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.result-primary:hover {
+  background-color: #d6cbbf;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* ===== 抽籤結果文字 ===== */
+
+.result {
+  margin-top: 50px;
+}
+
+#result-text {
+  font-size: 17px;
+  line-height: 2;
+  color: #3f3a34;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+  max-width: 420px;
+  white-space: pre-line; /* 保留換行，超重要 */
+  margin-bottom: 36px;   
+}
+
+/* ===== 結果區塊與頁尾分隔 ===== */
+
+.result {
+  margin-bottom: 60px;  /* 關鍵：把回到首頁往下推 */
+}
+
+.page-footer {
+  margin-top: 40px;
+}
